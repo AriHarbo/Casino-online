@@ -1,0 +1,139 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* Ajusta la altura según necesites */
+  background-color: #333; /* Color de fondo */
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000; /* Para que quede por encima del resto */
+}
+.navbar-brand{
+  display: flex;
+  color: white;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease-in-out;
+}
+.navbar-brand:hover{
+  color: #E67B07;
+}
+.containerNav{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin: 10px;
+}
+.navbar-right{
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
+}
+.signUpButton{
+  background-color: white;
+  margin: .5rem;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: black;
+  border-radius: 30px;
+  transition: background-color 0.2s ease-in-out ,color 0.2s ease-in-out;
+}
+.loginButton{
+  background-color: #E67B07;
+  margin: .5rem;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  border-radius: 30px;
+  transition: background-color 0.2s ease-in-out ,color 0.2s ease-in-out;
+}
+.signUpButton:hover{
+  background-color: rgb(220, 213, 213);
+  color: #555353;
+}
+.loginButton:hover{
+  background-color: #f79022;
+  color: #d8d0d0;
+}
+.searchBar{
+  display: flex;
+  padding: 5px;
+  background-color: #322f2f;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  border-radius: 20px;
+  border: 1px solid rgb(108, 103, 103);
+  transition: border 0.1s ease-in-out;
+}
+.searchInput{
+  width: 100%;
+  margin-left: .1rem;
+  background: none;
+  border: none;
+}
+.searchInput:focus {
+  outline: none; /* Elimina el contorno predeterminado */
+  border: none; /* Elimina el borde si es necesario */
+  box-shadow: none; /* Elimina cualquier sombra */
+  color: white;
+}
+.searchBar:focus-within {
+  border: 2px solid white;
+}
+.searchBar:focus-within .searchInput::placeholder {
+  color: rgb(255, 255, 255);
+}
+
