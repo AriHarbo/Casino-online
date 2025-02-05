@@ -173,7 +173,8 @@ a{
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  margin-left: 5rem;
+  justify-content: center;
+  align-items: center;
 }
 .topGames h2{
   color: white;
@@ -185,8 +186,6 @@ a{
   background-color: #333;
   border-radius: 10px;
   padding: 10px;
-  margin-top: 1rem;
-  margin-right: 2rem;
   max-width: 220px;
   transition: transform 0.3s ease-in-out;
 }
@@ -210,11 +209,29 @@ a{
   background-color: #f79022;
   color: #d8d0d0;
 }
-.gameCarrousel{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 .gameCard:hover{
   transform: scale(1.05);
+}
+.gameCarrousel{
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.slick-list{
+  height: 320px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.slick-track{
+  height: 320px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.slick-slide{
+  width: 250px;
 }

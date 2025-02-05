@@ -13,5 +13,30 @@
         "id": 3,
         "name": "Joker Poker",
         "image": "https://i.postimg.cc/bN3s2918/poker.webp"
+    },
+    {
+        "id": 4,
+        "name": "Mega Slots",
+        "image": "https://i.postimg.cc/4nCSK2cf/slots.webp"
+    },
+    {
+        "id": 5,
+        "name": "Blackjack God",
+        "image": "https://i.postimg.cc/657hHqck/blackjack.webp"
+    },
+    {
+        "id": 6,
+        "name": "Magic Roulette",
+        "image": "https://i.postimg.cc/9fv4QXZ7/ruleta.webp"
+    },
+    {
+        "id": 7,
+        "name": "Joker Poker",
+        "image": "https://i.postimg.cc/bN3s2918/poker.webp"
+    },
+    {
+        "id": 8,
+        "name": "Mega Slots",
+        "image": "https://i.postimg.cc/4nCSK2cf/slots.webp"
     }
 ]
