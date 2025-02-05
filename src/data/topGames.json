@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Blackjack God",
+        "image": "https://i.postimg.cc/657hHqck/blackjack.webp"
+    },
+    {
+        "id": 2,
+        "name": "Magic Roulette",
+        "image": "https://i.postimg.cc/9fv4QXZ7/ruleta.webp"
+    },
+    {
+        "id": 3,
+        "name": "Joker Poker",
+        "image": "https://i.postimg.cc/bN3s2918/poker.webp"
+    }
+]
