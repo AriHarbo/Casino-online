@@ -13,6 +13,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: black;
+  color: white;
 }
 #root {
   width: 100%;
@@ -235,3 +236,222 @@ a{
 .slick-slide{
   width: 250px;
 }
+.slick-prev,
+.slick-next {
+  z-index: 10;
+  width: 40px; /* Ajusta el tamaño de las flechas */
+  height: 40px;
+}
+
+.slick-prev {
+  left: -50px !important; /* Ajusta la distancia de la flecha izquierda */
+}
+
+.backButton {
+  display: flex;
+  flex-direction: column;
+  position: fixed; /* Usa fixed para que permanezca siempre visible al hacer scroll */
+  top: 20px;       /* Ajusta la distancia desde la parte superior */
+  left: 20px;      /* Ajusta la distancia desde el lado izquierdo */
+  padding: 10px 20px; /* Color de fondo */
+  color: white;             /* Color del texto */
+  border: none;             /* Sin borde */
+  border-radius: 8px;       /* Bordes redondeados */
+  cursor: pointer;          /* Cambia el cursor al pasar por encima */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  z-index: 1000;            /* Asegura que esté por encima de otros elementos */
+  transition: transform 0.3s ease ,background-color 0.3s; /* Transición suave */
+}
+.backButton:hover{
+background-color: #E67B07;
+transform: scale(1.03);
+}
+.contenedorFormulario {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Centra verticalmente */
+  align-items: center;      /* Centra horizontalmente */
+  width: 100%;
+  max-width: 500px;         /* Limita el tamaño del formulario */
+  padding: 20px;            /* Espacio interno */
+  margin: 120px auto;        /* Centra el contenedor en la pantalla */
+  background-color: #333; /* Color de fondo solo para el formulario */
+  border-radius: 10px;      /* Bordes redondeados */
+  /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para darle un toque visual */
+}
+.contenedorFormulario::before {
+  content: "";
+  position: absolute;
+  top: -400px;        /* Ajusta la posición del círculo */
+  left: -700px;       /* Ajusta la posición del círculo */
+  width: 800px;       /* Tamaño del círculo */
+  height: 800px;      /* Tamaño del círculo */
+  border-radius: 50%; /* Hace el elemento redondeado */
+  background-color: #333; /* Color de fondo que coincide con el del formulario */
+  z-index: -1;        /* Pone el círculo detrás del formulario */
+}
+.contenedorFormulario h1{
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 3.5rem;
+}
+.labelLogin{
+  display: block;
+  margin-bottom: 10px;
+  width: 350px;
+}
+.labelLogin input {
+  background: transparent;
+  padding: 10px;
+  width: 100%;
+  max-width: 350px; 
+  margin-top: 15px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(78,76,76,1);
+-moz-box-shadow: 2px 2px 5px 0px rgba(78,76,76,1);
+box-shadow: 2px 2px 5px 0px rgba(78,76,76,1);
+}
+.labelLogin input::placeholder{
+  color: white;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0; /* Espaciado arriba y abajo */
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid #4e4c4c; /* Línea horizontal */
+  margin: 0 10px; /* Espaciado entre las líneas y el texto */
+}
+
+.separator span {
+  font-size: 14px;  /* Tamaño del texto "OR" */
+  color: white;      /* Color del texto */
+}
+.formButton{
+  background-color: #E67B07;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.formButton:hover{
+  transform: scale(1.01);
+  background-color: #f79022;;
+}
+.formButtonLink{
+  text-align: center;
+  display: block;
+  background-color: #E67B07;
+  font-size: 13px;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  width: 100% !important;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.formButtonLink:hover{
+  transform: scale(1.01);
+  background-color: #f79022;;
+}
+#botonLogin1{
+  margin-top: 10px;
+}
+.imagenSlots{
+  position: absolute;
+  width: 350px;
+  left: 1000px;
+  top: 350px;
+  overflow: hidden;
+  filter: drop-shadow(9px 17px 38px #d53f3f);
+}
+.contenedorRegister {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Centra verticalmente */
+  align-items: center;      /* Centra horizontalmente */
+  width: 100%;
+  max-width: 800px;         /* Limita el tamaño del formulario */
+  padding: 20px;            /* Espacio interno */
+  margin: 120px auto;        /* Centra el contenedor en la pantalla */
+  background-color: #333; /* Color de fondo solo para el formulario */
+  border-radius: 10px;      /* Bordes redondeados */
+  /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para darle un toque visual */
+}
+.contenedorRegister form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorRegister h1{
+  text-align: center;
+  color: white;
+  font-size: 3.5rem;
+  margin-bottom: 50px;
+}
+.registerData1{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 10px;
+}
+.registerData1 .labelRegister{
+  display: block;
+  margin-bottom: 10px;
+  width: 350px;
+}
+.labelRegister input {
+  background: transparent;
+  padding: 10px;
+  width: 100%;
+  max-width: 350px; 
+  margin-top: 15px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(78,76,76,1);
+-moz-box-shadow: 2px 2px 5px 0px rgba(78,76,76,1);
+box-shadow: 2px 2px 5px 0px rgba(78,76,76,1);
+}
+.labelRegister input::placeholder{
+  color: white;
+}
+.registerData2{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  width: 100%;
+}
+.registerData2 .labelRegister{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+.registerData2 input{
+  margin-top: 10px;
+  width: 100%;
+}
+#botonRegister{
+  margin-top: 2rem;
+  width: 300px;
+  margin-bottom: 1rem;
+}
+
